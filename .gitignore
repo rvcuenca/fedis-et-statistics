@@ -5,7 +5,6 @@
 # Session Data files
 *.RData
 *.RDataTmp
-*.gitignore
 
 # User-specific files
 *.Ruserdata
