@@ -46,9 +46,9 @@ q_dt %>%
                          ifelse(DI < 0.3, "Difficult", "Moderate"))) %>% 
   mutate(across(DI, ~sprintf("%.2f",.x)))
 
-# just change the path to the data below (otherwise, there will an error)
+# just change (if needed) the path to the data below (otherwise, there will be an error)
 
-readxl::read_xlsx("C:\\Users\\reycu\\Downloads\\pre-test.xlsx") %>% 
+readxl::read_xlsx("data/pre-test.xlsx") %>% 
   # map(~janitor::tabyl(.x))
   select(!c(1,last_col())) %>% 
   # print(n = 100)
